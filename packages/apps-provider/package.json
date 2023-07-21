@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A provider wrapper of Safe Apps SDK",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*",
     "src/**/*",
