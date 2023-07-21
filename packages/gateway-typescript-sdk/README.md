@@ -1,3 +1,5 @@
+# DO NOT USE
+
 # Safe Gateway TypeScript SDK
 
 [![npm](https://img.shields.io/npm/v/@rndlabs/safe-gateway-typescript-sdk?label=%40safe-global%2Fsafe-gateway-typescript-sdk)](https://www.npmjs.com/package/@rndlabs/safe-gateway-typescript-sdk)
