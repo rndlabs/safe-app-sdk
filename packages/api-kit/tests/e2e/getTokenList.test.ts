@@ -1,6 +1,6 @@
 import chai from 'chai'
-import SafeApiKit from '@rndlabs/safe-api-kit/index'
-import { getServiceClient } from '../utils/setupServiceClient'
+import SafeApiKit from '../../src/index.js'
+import { getServiceClient } from '../utils/setupServiceClient.js'
 
 let safeApiKit: SafeApiKit
 

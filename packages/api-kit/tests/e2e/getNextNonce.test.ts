@@ -1,8 +1,8 @@
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
-import SafeApiKit from '@rndlabs/safe-api-kit/index'
-import config from '../utils/config'
-import { getServiceClient } from '../utils/setupServiceClient'
+import SafeApiKit from '../../src/index.js'
+import config from '../utils/config.js'
+import { getServiceClient } from '../utils/setupServiceClient.js'
 chai.use(chaiAsPromised)
 
 let safeApiKit: SafeApiKit

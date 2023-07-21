@@ -21,9 +21,9 @@ import {
   TokenInfoListResponse,
   TokenInfoResponse,
   TransferListResponse
-} from '@rndlabs/safe-api-kit/types/safeTransactionServiceTypes'
-import { getTxServiceBaseUrl } from '@rndlabs/safe-api-kit/utils'
-import { HttpMethod, sendRequest } from '@rndlabs/safe-api-kit/utils/httpRequests'
+} from './types/safeTransactionServiceTypes.js'
+import { getTxServiceBaseUrl } from './utils/index.js'
+import { HttpMethod, sendRequest } from './utils/httpRequests.js'
 import {
   EthAdapter,
   SafeMultisigConfirmationListResponse,
@@ -79,7 +79,7 @@ class SafeApiKit {
    * @throws "Not Found"
    * @throws "Ensure this field has at least 1 hexadecimal chars (not counting 0x)."
    */
-  async decodeData(data: string): Promise<any> {
+  async decodeData(data: string): Promise<unknown> {
     if (data === '') {
       throw new Error('Invalid data')
     }
@@ -289,7 +289,7 @@ class SafeApiKit {
     const totp = Math.floor(Date.now() / 1000 / 3600)
     const data = delegate + totp
     const signature = await signer.signMessage(data)
-    const body: any = {
+    const body: unknown = {
       safe: safeAddress ? (await this.#ethAdapter.getEip3770Address(safeAddress)).address : null,
       delegate,
       delegator,

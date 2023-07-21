@@ -4,17 +4,17 @@ import SafeApiKit, {
   AddSafeDelegateProps,
   DeleteSafeDelegateProps,
   SafeMultisigTransactionEstimate
-} from '@rndlabs/safe-api-kit/index'
-import { getTxServiceBaseUrl } from '@rndlabs/safe-api-kit/utils'
-import * as httpRequests from '@rndlabs/safe-api-kit/utils/httpRequests'
+} from '../../src/index.js'
+import { getTxServiceBaseUrl } from '../../src/utils/index.js'
+import * as httpRequests from '../../src/utils/httpRequests.js'
 import Safe from '@rndlabs/safe-protocol-kit'
 import { EthAdapter, SafeTransactionDataPartial } from '@rndlabs/safe-core-sdk-types'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import sinon from 'sinon'
 import sinonChai from 'sinon-chai'
-import config from '../utils/config'
-import { getServiceClient } from '../utils/setupServiceClient'
+import config from '../utils/config.js'
+import { getServiceClient } from '../utils/setupServiceClient.js'
 
 chai.use(chaiAsPromised)
 chai.use(sinonChai)

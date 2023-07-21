@@ -1,8 +1,8 @@
 import { getDefaultProvider } from '@ethersproject/providers'
 import { Wallet } from '@ethersproject/wallet'
 import { EthAdapter } from '@rndlabs/safe-core-sdk-types'
-import SafeApiKit from '@rndlabs/safe-api-kit/index'
-import config from '../utils/config'
+import SafeApiKit from '../../src/index.js'
+import config from '../utils/config.js'
 import { getEthAdapter } from '../utils/setupEthAdapter'
 
 interface ServiceClientConfig {
