@@ -1,7 +1,7 @@
 import SafeAppsSDK, { SafeInfo, Web3TransactionObject } from '@rndlabs/safe-apps-sdk'
 import { EventEmitter } from 'events'
-import { EIP1193Provider } from './types'
-import { getLowerCase } from './utils'
+import { EIP1193Provider } from './types.js'
+import { getLowerCase } from './utils.js'
 
 // The API is based on Ethereum JavaScript API Provider Standard. Link: https://eips.ethereum.org/EIPS/eip-1193
 export class SafeAppProvider extends EventEmitter implements EIP1193Provider {
