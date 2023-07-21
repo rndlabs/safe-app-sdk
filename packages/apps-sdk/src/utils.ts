@@ -1,4 +1,4 @@
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 export const getSDKVersion = (): string => {
   // Strip out version tags like `beta.0` in `1.0.0-beta.0`
