@@ -22,8 +22,8 @@ Software development kit that facilitates the interaction with the [Safe contrac
 Install the package with yarn or npm:
 
 ```bash
-yarn add @safe-global/protocol-kit
-npm install @safe-global/protocol-kit
+yarn add @rndlabs/safe-protocol-kit
+npm install @rndlabs/safe-protocol-kit
 ```
 
 ## <a name="build">Build</a>
@@ -66,7 +66,7 @@ Once the instance of `EthersAdapter` or `Web3Adapter` is created, it can be used
 To deploy a new Safe account instantiate the `SafeFactory` class and call the `deploySafe` method with the right params to configure the new Safe. This includes defining the list of owners and the threshold of the Safe. A Safe account with three owners and threshold equal three will be used as the starting point for this example but any Safe configuration is valid.
 
 ```js
-import Safe, { SafeFactory, SafeAccountConfig } from '@safe-global/protocol-kit'
+import Safe, { SafeFactory, SafeAccountConfig } from '@rndlabs/safe-protocol-kit'
 
 const safeFactory = await SafeFactory.create({ ethAdapter })
 
@@ -92,7 +92,7 @@ const newSafeAddress = await safeSdk.getAddress()
 To instantiate the Protocol Kit from an existing Safe just pass to it an instance of the `EthAdapter` class and the Safe address.
 
 ```js
-import Safe from '@safe-global/protocol-kit'
+import Safe from '@rndlabs/safe-protocol-kit'
 
 const safeSdk: Safe = await Safe.create({ ethAdapter: ethAdapterOwner1, safeAddress })
 ```
@@ -102,7 +102,7 @@ Check the `create` method in the [API Reference](#sdk-api) for more details on a
 ### 3. Create a Safe transaction
 
 ```js
-import { SafeTransactionDataPartial } from '@safe-global/safe-core-sdk-types'
+import { SafeTransactionDataPartial } from '@rndlabs/safe-core-sdk-types'
 
 const safeTransactionData: SafeTransactionDataPartial = {
   to: '0x<address>',
@@ -158,7 +158,7 @@ All the signatures used to execute the transaction are now available at `safeTra
 Returns an instance of the Safe Factory.
 
 ```js
-import { SafeFactory } from '@safe-global/protocol-kit'
+import { SafeFactory } from '@rndlabs/safe-protocol-kit'
 
 const safeFactory = await SafeFactory.create({ ethAdapter })
 ```
@@ -178,7 +178,7 @@ const safeFactory = await SafeFactory.create({ ethAdapter })
   If the Safe contracts are not deployed to your current network, the `contractNetworks` property will be required to point to the addresses of the Safe contracts previously deployed by you.
 
   ```js
-  import { ContractNetworksConfig } from '@safe-global/protocol-kit'
+  import { ContractNetworksConfig } from '@rndlabs/safe-protocol-kit'
 
   const chainId = await ethAdapter.getChainId()
   const contractNetworks: ContractNetworksConfig = {
@@ -299,7 +299,7 @@ Returns an instance of the Protocol Kit connected to a Safe. The provided Safe m
 Initialization of a deployed Safe using the `safeAddress` property:
 
 ```js
-import Safe from '@safe-global/protocol-kit'
+import Safe from '@rndlabs/safe-protocol-kit'
 
 const safeSdk = await Safe.create({ ethAdapter, safeAddress })
 ```
@@ -307,7 +307,7 @@ const safeSdk = await Safe.create({ ethAdapter, safeAddress })
 Initialization of a not deployed Safe using the `predictedSafe` property. Because Safes are deployed in a deterministic way, passing a `predictedSafe` will allow to initialize the SDK with the Safe configuration and use it to some extent before it is deployed:
 
 ```js
-import Safe, { PredictedSafeProps } from '@safe-global/protocol-kit'
+import Safe, { PredictedSafeProps } from '@rndlabs/safe-protocol-kit'
 
 const predictedSafe: PredictedSafeProps = {
   safeAccountConfig,
@@ -332,7 +332,7 @@ const safeSdk = await Safe.create({ ethAdapter, predictedSafe })
   If the Safe contracts are not deployed to your current network, the `contractNetworks` property will be required to point to the addresses of the Safe contracts previously deployed by you.
 
   ```js
-  import { ContractNetworksConfig } from '@safe-global/protocol-kit'
+  import { ContractNetworksConfig } from '@rndlabs/safe-protocol-kit'
 
   const chainId = await ethAdapter.getChainId()
   const contractNetworks: ContractNetworksConfig = {
@@ -372,7 +372,7 @@ const safeSdk = await safeSdk.connect({ ethAdapter, safeAddress })
 Connection of a not deployed Safe using the `predictedSafe` property. Because Safes are deployed in a deterministic way, passing a `predictedSafe` will allow to connect a Safe to the SDK with the Safe configuration:
 
 ```js
-import { PredictedSafeProps } from '@safe-global/protocol-kit'
+import { PredictedSafeProps } from '@rndlabs/safe-protocol-kit'
 
 const predictedSafe: PredictedSafeProps = {
   safeAccountConfig,
@@ -397,7 +397,7 @@ const safeSdk = await safeSdk.connect({ ethAdapter, predictedSafe })
   If the Safe contracts are not deployed to your current network, the `contractNetworks` property will be required to point to the addresses of the Safe contracts previously deployed by you.
 
   ```js
-  import { ContractNetworksConfig } from '@safe-global/protocol-kit'
+  import { ContractNetworksConfig } from '@rndlabs/safe-protocol-kit'
 
   const chainId = await ethAdapter.getChainId()
   const contractNetworks: ContractNetworksConfig = {
@@ -520,7 +520,7 @@ Returns a Safe transaction ready to be signed by the owners and executed. The Pr
   This method can take an object of type `SafeTransactionDataPartial` that represents the transaction we want to execute (once the signatures are collected). It accepts some optional properties as follows.
 
   ```js
-  import { SafeTransactionDataPartial } from '@safe-global/safe-core-sdk-types'
+  import { SafeTransactionDataPartial } from '@rndlabs/safe-core-sdk-types'
 
   const safeTransactionData: SafeTransactionDataPartial = {
     to,

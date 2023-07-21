@@ -1,4 +1,4 @@
-import { ContractNetworksConfig } from '@safe-global/protocol-kit/index'
+import { ContractNetworksConfig } from '@rndlabs/safe-protocol-kit/index'
 import {
   getCompatibilityFallbackHandler,
   getCreateCall,

@@ -1,14 +1,14 @@
 import { isAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
-import { EMPTY_DATA, ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
-import { createMemoizedFunction } from '@safe-global/protocol-kit/utils/memoized'
+import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
+import { EMPTY_DATA, ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
+import { createMemoizedFunction } from '@rndlabs/safe-protocol-kit/utils/memoized'
 import {
   EthAdapter,
   SafeContract,
   SafeProxyFactoryContract,
   SafeVersion
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import { generateAddress2, keccak256, toBuffer } from 'ethereumjs-util'
 import semverSatisfies from 'semver/functions/satisfies'
 import {

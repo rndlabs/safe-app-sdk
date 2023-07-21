@@ -1,11 +1,11 @@
-import { SafeTransactionData } from '@safe-global/safe-core-sdk-types'
+import { SafeTransactionData } from '@rndlabs/safe-core-sdk-types'
 import chai from 'chai'
 import {
   EIP712_DOMAIN,
   EIP712_DOMAIN_BEFORE_V130,
   generateTypedData,
   getEip712MessageTypes
-} from '@safe-global/protocol-kit/utils'
+} from '@rndlabs/safe-protocol-kit/utils'
 
 const safeAddress = '0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1'
 const safeTransactionData: SafeTransactionData = {

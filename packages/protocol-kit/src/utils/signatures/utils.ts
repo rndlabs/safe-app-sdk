@@ -1,8 +1,4 @@
-import {
-  EthAdapter,
-  SafeSignature,
-  SafeTransactionEIP712Args
-} from '@safe-global/safe-core-sdk-types'
+import { EthAdapter, SafeSignature, SafeTransactionEIP712Args } from '@rndlabs/safe-core-sdk-types'
 import { bufferToHex, ecrecover, pubToAddress } from 'ethereumjs-util'
 import { sameString } from '../address'
 import { EthSafeSignature } from './SafeSignature'

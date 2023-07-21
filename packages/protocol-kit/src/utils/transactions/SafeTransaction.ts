@@ -1,8 +1,4 @@
-import {
-  SafeSignature,
-  SafeTransaction,
-  SafeTransactionData
-} from '@safe-global/safe-core-sdk-types'
+import { SafeSignature, SafeTransaction, SafeTransactionData } from '@rndlabs/safe-core-sdk-types'
 
 class EthSafeTransaction implements SafeTransaction {
   data: SafeTransactionData

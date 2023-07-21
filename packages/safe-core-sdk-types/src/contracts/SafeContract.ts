@@ -6,7 +6,7 @@ import {
   SafeVersion,
   TransactionOptions,
   TransactionResult
-} from '@safe-global/safe-core-sdk-types/types'
+} from '@rndlabs/safe-core-sdk-types/types'
 
 export interface SafeContract {
   setup(setupConfig: SafeSetupConfig, options?: TransactionOptions): Promise<TransactionResult>

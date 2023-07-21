@@ -1,10 +1,10 @@
 import { Interface } from '@ethersproject/abi'
 import { arrayify } from '@ethersproject/bytes'
 import { pack as solidityPack } from '@ethersproject/solidity'
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
-import { StandardizeSafeTransactionDataProps } from '@safe-global/protocol-kit/types'
-import { hasSafeFeature, SAFE_FEATURES } from '@safe-global/protocol-kit/utils'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
+import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
+import { StandardizeSafeTransactionDataProps } from '@rndlabs/safe-protocol-kit/types'
+import { hasSafeFeature, SAFE_FEATURES } from '@rndlabs/safe-protocol-kit/utils'
+import { ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
 import {
   MetaTransactionData,
   OperationType,
@@ -13,7 +13,7 @@ import {
   SafeTransactionData,
   SafeTransactionDataPartial,
   SafeVersion
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import semverSatisfies from 'semver/functions/satisfies'
 import { hexToNumber, hexToNumberString, toChecksumAddress } from 'web3-utils'
 import { estimateGas, estimateTxGas } from './gas'

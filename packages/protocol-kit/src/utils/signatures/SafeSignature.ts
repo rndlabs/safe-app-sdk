@@ -1,4 +1,4 @@
-import { SafeSignature } from '@safe-global/safe-core-sdk-types'
+import { SafeSignature } from '@rndlabs/safe-core-sdk-types'
 
 export class EthSafeSignature implements SafeSignature {
   signer: string

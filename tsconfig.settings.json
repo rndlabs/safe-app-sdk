@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2019" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
-    "module": "CommonJS" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
+    "target": "esnext" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
+    "module": "esnext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
     "allowJs": false /* Allow javascript files to be compiled. */,
     "declaration": true /* Generates corresponding '.d.ts' file. */,
     "sourceMap": true /* Generates corresponding '.map' file. */,
@@ -25,15 +25,14 @@
     "resolveJsonModule": true,
     "baseUrl": "./",
     "paths": {
-      "@safe-global/account-abstraction-kit-poc/*": ["./packages/account-abstraction-kit/src/*"],
-      "@safe-global/api-kit/*": ["./packages/api-kit/src/*"],
-      "@safe-global/auth-kit/*": ["./packages/auth-kit/src/*"],
-      "@safe-global/onramp-kit/*": ["./packages/onramp-kit/src/*"],
-      "@safe-global/protocol-kit/*": ["./packages/protocol-kit/src/*"],
-      "@safe-global/protocol-kit/typechain/*": ["./packages/protocol-kit/typechain/*"],
-      "@safe-global/protocol-kit/hardhat/*": ["./packages/protocol-kit/hardhat/*"],
-      "@safe-global/relay-kit/*": ["./packages/relay-kit/src/*"],
-      "@safe-global/safe-core-sdk-types/*": ["./packages/safe-core-sdk-types/src/*"]
+      "@rndlabs/safe-api-kit/*": ["./packages/api-kit/src/*"],
+      "@rndlabs/safe-protocol-kit/*": ["./packages/protocol-kit/src/*"],
+      "@rndlabs/safe-protocol-kit/typechain/*": ["./packages/protocol-kit/typechain/*"],
+      "@rndlabs/safe-protocol-kit/hardhat/*": ["./packages/protocol-kit/hardhat/*"],
+      "@rndlabs/safe-core-sdk-types/*": ["./packages/safe-core-sdk-types/src/*"],
+      "@rndlabs/safe-gateway-typescript-sdk/*": ["./packages/gateway-typescript-sdk/src/*"],
+      "@rndlabs/safe-apps-provider/*": ["./packages/apps-provider/src/*"],
+      "@rndlabs/safe-apps-sdk/*": ["./packages/apps-sdk/src/*"],
     }
   },
   "exclude": ["**/dist", "**/node_modules"]

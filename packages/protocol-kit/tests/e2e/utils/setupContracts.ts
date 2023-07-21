@@ -9,17 +9,17 @@ import {
   safeVersionDeployed,
   signMessageLibDeployed,
   simulateTxAccessorDeployed
-} from '@safe-global/protocol-kit/hardhat/deploy/deploy-contracts'
+} from '@rndlabs/safe-protocol-kit/hardhat/deploy/deploy-contracts'
 import {
   Proxy_factory as SafeProxyFactory_V1_0_0,
   Gnosis_safe as Safe_V1_0_0
-} from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.0.0'
+} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.0.0'
 import {
   Multi_send as MultiSend_V1_1_1,
   Proxy_factory as SafeProxyFactory_V1_1_1,
   Gnosis_safe as Safe_V1_1_1
-} from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.1.1'
-import { Gnosis_safe as Safe_V1_2_0 } from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.2.0'
+} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.1.1'
+import { Gnosis_safe as Safe_V1_2_0 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.2.0'
 import {
   Compatibility_fallback_handler as CompatibilityFallbackHandler_V1_3_0,
   Create_call as CreateCall_V1_3_0,
@@ -29,7 +29,7 @@ import {
   Gnosis_safe as Safe_V1_3_0,
   Sign_message_lib as SignMessageLib_V1_3_0,
   Simulate_tx_accessor as SimulateTxAccessor_V1_3_0
-} from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.3.0'
+} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0'
 import {
   Compatibility_fallback_handler as CompatibilityFallbackHandler_V1_4_1,
   Create_call as CreateCall_V1_4_1,
@@ -39,13 +39,13 @@ import {
   Safe as Safe_V1_4_1,
   Sign_message_lib as SignMessageLib_V1_4_1,
   Simulate_tx_accessor as SimulateTxAccessor_V1_4_1
-} from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.4.1'
+} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1'
 import {
   DailyLimitModule,
   ERC20Mintable,
   SocialRecoveryModule
-} from '@safe-global/protocol-kit/typechain/tests/ethers-v5/v1.2.0'
-import { DebugTransactionGuard } from '@safe-global/protocol-kit/typechain/tests/ethers-v5/v1.3.0'
+} from '@rndlabs/safe-protocol-kit/typechain/tests/ethers-v5/v1.2.0'
+import { DebugTransactionGuard } from '@rndlabs/safe-protocol-kit/typechain/tests/ethers-v5/v1.3.0'
 import { deployments, ethers } from 'hardhat'
 import semverSatisfies from 'semver/functions/satisfies'
 import { AbiItem } from 'web3-utils'

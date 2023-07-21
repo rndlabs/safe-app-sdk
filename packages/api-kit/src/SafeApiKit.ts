@@ -21,14 +21,14 @@ import {
   TokenInfoListResponse,
   TokenInfoResponse,
   TransferListResponse
-} from '@safe-global/api-kit/types/safeTransactionServiceTypes'
-import { getTxServiceBaseUrl } from '@safe-global/api-kit/utils'
-import { HttpMethod, sendRequest } from '@safe-global/api-kit/utils/httpRequests'
+} from '@rndlabs/safe-api-kit/types/safeTransactionServiceTypes'
+import { getTxServiceBaseUrl } from '@rndlabs/safe-api-kit/utils'
+import { HttpMethod, sendRequest } from '@rndlabs/safe-api-kit/utils/httpRequests'
 import {
   EthAdapter,
   SafeMultisigConfirmationListResponse,
   SafeMultisigTransactionResponse
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 
 export interface SafeApiKitConfig {
   /** txServiceUrl - Safe Transaction Service URL */

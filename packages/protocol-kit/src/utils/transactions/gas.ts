@@ -1,11 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ContractNetworksConfig } from '@safe-global/protocol-kit/types'
-import {
-  EthAdapter,
-  OperationType,
-  SafeContract,
-  SafeVersion
-} from '@safe-global/safe-core-sdk-types'
+import { ContractNetworksConfig } from '@rndlabs/safe-protocol-kit/types'
+import { EthAdapter, OperationType, SafeContract, SafeVersion } from '@rndlabs/safe-core-sdk-types'
 import { getSimulateTxAccessorContract } from '../../contracts/safeDeploymentContracts'
 
 function estimateDataGasCosts(data: string): number {

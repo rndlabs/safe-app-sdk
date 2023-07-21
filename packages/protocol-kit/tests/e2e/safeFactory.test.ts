@@ -1,12 +1,12 @@
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
-import { safeVersionDeployed } from '@safe-global/protocol-kit/hardhat/deploy/deploy-contracts'
+import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
+import { safeVersionDeployed } from '@rndlabs/safe-protocol-kit/hardhat/deploy/deploy-contracts'
 import {
   ContractNetworksConfig,
   DeploySafeProps,
   SafeAccountConfig,
   SafeFactory
-} from '@safe-global/protocol-kit/index'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
+} from '@rndlabs/safe-protocol-kit/index'
+import { ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { deployments, waffle } from 'hardhat'

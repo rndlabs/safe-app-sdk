@@ -10,7 +10,7 @@ If the app integrating the SDK is using `ethers`, create an instance of the `Eth
 
 ```js
 import { ethers } from 'ethers'
-import { EthersAdapter } from '@safe-global/protocol-kit'
+import { EthersAdapter } from '@rndlabs/safe-protocol-kit'
 
 const web3Provider = // ...
 const provider = new ethers.providers.Web3Provider(web3Provider)

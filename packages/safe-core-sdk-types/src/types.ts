@@ -1,5 +1,93 @@
 import { ContractTransaction } from '@ethersproject/contracts'
-import { PromiEvent, TransactionReceipt } from 'web3-core/types'
+
+export interface Log {
+  address: string
+  data: string
+  topics: string[]
+  logIndex: number
+  transactionIndex: number
+  transactionHash: string
+  blockHash: string
+  blockNumber: number
+  removed: boolean
+}
+
+export interface EventLog {
+  event: string
+  address: string
+  returnValues: any
+  logIndex: number
+  transactionIndex: number
+  transactionHash: string
+  blockHash: string
+  blockNumber: number
+  raw?: { data: string; topics: any[] }
+}
+
+export interface TransactionReceipt {
+  status: boolean
+  transactionHash: string
+  transactionIndex: number
+  blockHash: string
+  blockNumber: number
+  from: string
+  to: string
+  contractAddress?: string
+  cumulativeGasUsed: number
+  gasUsed: number
+  effectiveGasPrice: number
+  logs: Log[]
+  logsBloom: string
+  events?: {
+    [eventName: string]: EventLog
+  }
+}
+
+export interface PromiEvent<T> extends Promise<T> {
+  once(type: 'sending', handler: (payload: object) => void): PromiEvent<T>
+
+  once(type: 'sent', handler: (payload: object) => void): PromiEvent<T>
+
+  once(type: 'transactionHash', handler: (transactionHash: string) => void): PromiEvent<T>
+
+  once(type: 'receipt', handler: (receipt: TransactionReceipt) => void): PromiEvent<T>
+
+  once(
+    type: 'confirmation',
+    handler: (
+      confirmationNumber: number,
+      receipt: TransactionReceipt,
+      latestBlockHash?: string
+    ) => void
+  ): PromiEvent<T>
+
+  once(type: 'error', handler: (error: Error) => void): PromiEvent<T>
+
+  once(
+    type: 'error' | 'confirmation' | 'receipt' | 'transactionHash' | 'sent' | 'sending',
+    handler: (error: Error | TransactionReceipt | string | object) => void
+  ): PromiEvent<T>
+
+  on(type: 'sending', handler: (payload: object) => void): PromiEvent<T>
+
+  on(type: 'sent', handler: (payload: object) => void): PromiEvent<T>
+
+  on(type: 'transactionHash', handler: (receipt: string) => void): PromiEvent<T>
+
+  on(type: 'receipt', handler: (receipt: TransactionReceipt) => void): PromiEvent<T>
+
+  on(
+    type: 'confirmation',
+    handler: (confNumber: number, receipt: TransactionReceipt, latestBlockHash?: string) => void
+  ): PromiEvent<T>
+
+  on(type: 'error', handler: (error: Error) => void): PromiEvent<T>
+
+  on(
+    type: 'error' | 'confirmation' | 'receipt' | 'transactionHash' | 'sent' | 'sending',
+    handler: (error: Error | TransactionReceipt | string | object) => void
+  ): PromiEvent<T>
+}
 
 export type SafeVersion = '1.4.1' | '1.3.0' | '1.2.0' | '1.1.1' | '1.0.0'
 

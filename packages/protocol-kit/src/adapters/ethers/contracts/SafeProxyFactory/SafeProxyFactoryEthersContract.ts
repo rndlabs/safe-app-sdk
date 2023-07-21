@@ -1,11 +1,11 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { Event } from '@ethersproject/contracts'
-import { EthersTransactionOptions } from '@safe-global/protocol-kit/adapters/ethers/types'
-import { Proxy_factory as SafeProxyFactory_V1_0_0 } from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.0.0/Proxy_factory'
-import { Proxy_factory as SafeProxyFactory_V1_1_1 } from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.1.1/Proxy_factory'
-import { Proxy_factory as SafeProxyFactory_V1_3_0 } from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.3.0/Proxy_factory'
-import { Safe_proxy_factory as SafeProxyFactory_V1_4_1 } from '@safe-global/protocol-kit/typechain/src/ethers-v5/v1.4.1/Safe_proxy_factory'
-import { SafeProxyFactoryContract } from '@safe-global/safe-core-sdk-types'
+import { EthersTransactionOptions } from '@rndlabs/safe-protocol-kit/adapters/ethers/types'
+import { Proxy_factory as SafeProxyFactory_V1_0_0 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.0.0/Proxy_factory'
+import { Proxy_factory as SafeProxyFactory_V1_1_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.1.1/Proxy_factory'
+import { Proxy_factory as SafeProxyFactory_V1_3_0 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Proxy_factory'
+import { Safe_proxy_factory as SafeProxyFactory_V1_4_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1/Safe_proxy_factory'
+import { SafeProxyFactoryContract } from '@rndlabs/safe-core-sdk-types'
 
 export interface CreateProxyProps {
   safeMasterCopyAddress: string

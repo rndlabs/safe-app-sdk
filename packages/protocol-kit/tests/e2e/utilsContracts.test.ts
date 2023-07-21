@@ -8,15 +8,15 @@ import { getEthAdapter } from './utils/setupEthAdapter'
 import {
   PREDETERMINED_SALT_NONCE,
   predictSafeAddress
-} from '@safe-global/protocol-kit/contracts/utils'
-import { safeVersionDeployed } from '@safe-global/protocol-kit/hardhat/deploy/deploy-contracts'
+} from '@rndlabs/safe-protocol-kit/contracts/utils'
+import { safeVersionDeployed } from '@rndlabs/safe-protocol-kit/hardhat/deploy/deploy-contracts'
 import {
   SafeDeploymentConfig,
   SafeAccountConfig,
   ContractNetworksConfig
-} from '@safe-global/protocol-kit/types'
-import Safe, { SafeFactory, DeploySafeProps } from '@safe-global/protocol-kit/index'
-import { EthAdapter } from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-protocol-kit/types'
+import Safe, { SafeFactory, DeploySafeProps } from '@rndlabs/safe-protocol-kit/index'
+import { EthAdapter } from '@rndlabs/safe-core-sdk-types'
 import { itif } from './utils/helpers'
 
 // test util funcion to deploy a safe (needed to check the expected Safe Address)

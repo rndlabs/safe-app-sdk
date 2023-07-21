@@ -2,12 +2,24 @@ import { execSync } from 'child_process'
 import { existsSync, mkdirSync, readdir } from 'fs'
 import path from 'path'
 
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
+
+// Get the current file URL
+const currentFileUrl = import.meta.url
+
+// Convert the file URL to a file path
+const currentFilePath = fileURLToPath(currentFileUrl)
+
+// Get the directory path of the current file
+const currentDirPath = dirname(currentFilePath)
+
 // Directories where the Typechain files will be generated
 const outDirSrc = 'typechain/src/'
-const typeChainDirectorySrcPath = path.join(__dirname, `../${outDirSrc}`)
+const typeChainDirectorySrcPath = join(currentDirPath, '..', outDirSrc)
 
 const outDirBuild = 'dist/typechain/src/'
-const typeChainDirectoryBuildPath = path.join(__dirname, `../${outDirBuild}`)
+const typeChainDirectoryBuildPath = join(currentDirPath, '..', outDirBuild)
 
 const outDirTests = 'typechain/tests/'
 
@@ -50,21 +62,21 @@ const safeContracts_V1_0_0 = [
 const safeContractsTestV1_4_1Path =
   '../../node_modules/@safe-global/safe-contracts-v1.4.1/build/artifacts/contracts'
 const testContracts_V1_4_1 = [
-  `${safeContractsTestV1_4_1Path}/examples/guards/DebugTransactionGuard.sol/DebugTransactionGuard.json`
+  // `${safeContractsTestV1_4_1Path}/examples/guards/DebugTransactionGuard.sol/DebugTransactionGuard.json`
 ].join(' ')
 const safeContractsTestV1_3_0Path =
   '../../node_modules/@gnosis.pm/safe-contracts-v1.3.0/build/artifacts/contracts'
 const testContracts_V1_3_0 = [
-  `${safeContractsTestV1_3_0Path}/examples/guards/DebugTransactionGuard.sol/DebugTransactionGuard.json`,
-  `${safeContractsTestV1_3_0Path}/examples/guards/DefaultCallbackHandler.sol/DefaultCallbackHandler.json`
+  // `${safeContractsTestV1_3_0Path}/examples/guards/DebugTransactionGuard.sol/DebugTransactionGuard.json`,
+  // `${safeContractsTestV1_3_0Path}/examples/guards/DefaultCallbackHandler.sol/DefaultCallbackHandler.json`
 ].join(' ')
 const safeContractsTestV1_2_0Path =
   '../../node_modules/@gnosis.pm/safe-contracts-v1.2.0/build/contracts'
 const openZeppelinContractsPath = '../../node_modules/openzeppelin-solidity/build/contracts'
 const testContracts_V1_2_0 = [
-  `${safeContractsTestV1_2_0Path}/DailyLimitModule.json`,
-  `${safeContractsTestV1_2_0Path}/SocialRecoveryModule.json`,
-  `${openZeppelinContractsPath}/ERC20Mintable.json`
+  // `${safeContractsTestV1_2_0Path}/DailyLimitModule.json`,
+  // `${safeContractsTestV1_2_0Path}/SocialRecoveryModule.json`,
+  // `${openZeppelinContractsPath}/ERC20Mintable.json`
 ].join(' ')
 
 // Remove existing Typechain files
@@ -90,6 +102,7 @@ function moveTypechainFiles(inDir: string, outDir: string): void {
       mkdirSync(`${outDir}`, { recursive: true })
     }
     files.forEach((file) => {
+      console.error(`Copying ${file}`)
       const pattern = /.d.ts/
       if (!file.match(pattern)) {
         return
@@ -147,23 +160,22 @@ function generateTypes(typechainTarget: string) {
     `${typeChainDirectoryBuildPath}${typechainTarget}/v1.0.0`
   )
 
-  // Tests
-  generateTypechainFiles(
-    typechainTarget,
-    `${outDirTests}${typechainTarget}/v1.4.1`,
-    testContracts_V1_4_1
-  )
-  generateTypechainFiles(
-    typechainTarget,
-    `${outDirTests}${typechainTarget}/v1.3.0`,
-    testContracts_V1_3_0
-  )
-  generateTypechainFiles(
-    typechainTarget,
-    `${outDirTests}${typechainTarget}/v1.2.0`,
-    testContracts_V1_2_0
-  )
+  // // Tests
+  // generateTypechainFiles(
+  //   typechainTarget,
+  //   `${outDirTests}${typechainTarget}/v1.4.1`,
+  //   testContracts_V1_4_1
+  // )
+  // generateTypechainFiles(
+  //   typechainTarget,
+  //   `${outDirTests}${typechainTarget}/v1.3.0`,
+  //   testContracts_V1_3_0
+  // )
+  // generateTypechainFiles(
+  //   typechainTarget,
+  //   `${outDirTests}${typechainTarget}/v1.2.0`,
+  //   testContracts_V1_2_0
+  // )
 }
 
 generateTypes('ethers-v5')
-generateTypes('web3-v1')

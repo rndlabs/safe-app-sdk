@@ -1,11 +1,11 @@
-import { SafeTransactionOptionalProps } from '@safe-global/protocol-kit/utils/transactions'
+import { SafeTransactionOptionalProps } from '@rndlabs/safe-protocol-kit/utils/transactions'
 import {
   EthAdapter,
   MetaTransactionData,
   SafeContract,
   SafeTransactionDataPartial,
   SafeVersion
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import { AbiItem } from 'web3-utils'
 
 export interface SafeAccountConfig {

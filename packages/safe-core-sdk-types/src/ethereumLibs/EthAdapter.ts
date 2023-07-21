@@ -1,19 +1,48 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CompatibilityFallbackHandlerContract } from '@safe-global/safe-core-sdk-types/contracts/CompatibilityFallbackHandlerContract'
-import { CreateCallContract } from '@safe-global/safe-core-sdk-types/contracts/CreateCallContract'
-import { MultiSendCallOnlyContract } from '@safe-global/safe-core-sdk-types/contracts/MultiSendCallOnlyContract'
-import { MultiSendContract } from '@safe-global/safe-core-sdk-types/contracts/MultiSendContract'
-import { SafeContract } from '@safe-global/safe-core-sdk-types/contracts/SafeContract'
-import { SafeProxyFactoryContract } from '@safe-global/safe-core-sdk-types/contracts/SafeProxyFactoryContract'
-import { SignMessageLibContract } from '@safe-global/safe-core-sdk-types/contracts/SignMessageLibContract'
-import { SimulateTxAccessorContract } from '@safe-global/safe-core-sdk-types/contracts/SimulateTxAccessorContract'
+import { CompatibilityFallbackHandlerContract } from '@rndlabs/safe-core-sdk-types/contracts/CompatibilityFallbackHandlerContract'
+import { CreateCallContract } from '@rndlabs/safe-core-sdk-types/contracts/CreateCallContract'
+import { MultiSendCallOnlyContract } from '@rndlabs/safe-core-sdk-types/contracts/MultiSendCallOnlyContract'
+import { MultiSendContract } from '@rndlabs/safe-core-sdk-types/contracts/MultiSendContract'
+import { SafeContract } from '@rndlabs/safe-core-sdk-types/contracts/SafeContract'
+import { SafeProxyFactoryContract } from '@rndlabs/safe-core-sdk-types/contracts/SafeProxyFactoryContract'
+import { SignMessageLibContract } from '@rndlabs/safe-core-sdk-types/contracts/SignMessageLibContract'
+import { SimulateTxAccessorContract } from '@rndlabs/safe-core-sdk-types/contracts/SimulateTxAccessorContract'
 import {
   Eip3770Address,
   SafeTransactionEIP712Args,
   SafeVersion
-} from '@safe-global/safe-core-sdk-types/types'
+} from '@rndlabs/safe-core-sdk-types/types'
 import { SingletonDeployment } from '@safe-global/safe-deployments'
-import { AbiItem } from 'web3-utils'
+
+export type AbiType = 'function' | 'constructor' | 'event' | 'fallback' | 'receive'
+export type StateMutabilityType = 'pure' | 'view' | 'nonpayable' | 'payable'
+
+export interface AbiItem {
+  anonymous?: boolean
+  constant?: boolean
+  inputs?: AbiInput[]
+  name?: string
+  outputs?: AbiOutput[]
+  payable?: boolean
+  stateMutability?: StateMutabilityType
+  type: AbiType
+  gas?: number
+}
+
+export interface AbiInput {
+  name: string
+  type: string
+  indexed?: boolean
+  components?: AbiInput[]
+  internalType?: string
+}
+
+export interface AbiOutput {
+  name: string
+  type: string
+  components?: AbiOutput[]
+  internalType?: string
+}
 
 export interface EthAdapterTransaction {
   to: string

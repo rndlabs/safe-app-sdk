@@ -1,4 +1,4 @@
-import SafeApiKit from '@safe-global/api-kit/index'
+import SafeApiKit from '@rndlabs/safe-api-kit/index'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import config from '../utils/config'

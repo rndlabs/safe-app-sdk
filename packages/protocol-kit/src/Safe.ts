@@ -10,7 +10,7 @@ import {
   SafeVersion,
   TransactionOptions,
   TransactionResult
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import { DEFAULT_SAFE_VERSION } from './contracts/config'
 import { predictSafeAddress } from './contracts/utils'
 import ContractManager from './managers/contractManager'

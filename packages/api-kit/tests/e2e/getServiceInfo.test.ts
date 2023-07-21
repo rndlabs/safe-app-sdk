@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import SafeApiKit from '@safe-global/api-kit/index'
+import SafeApiKit from '@rndlabs/safe-api-kit/index'
 import { getServiceClient } from '../utils/setupServiceClient'
 
 let safeApiKit: SafeApiKit

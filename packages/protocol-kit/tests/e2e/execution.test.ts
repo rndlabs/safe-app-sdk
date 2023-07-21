@@ -1,13 +1,13 @@
-import { safeVersionDeployed } from '@safe-global/protocol-kit/hardhat/deploy/deploy-contracts'
+import { safeVersionDeployed } from '@rndlabs/safe-protocol-kit/hardhat/deploy/deploy-contracts'
 import Safe, {
   EthersTransactionOptions,
   Web3TransactionOptions
-} from '@safe-global/protocol-kit/index'
+} from '@rndlabs/safe-protocol-kit/index'
 import {
   MetaTransactionData,
   SafeTransactionDataPartial,
   TransactionOptions
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { BigNumber } from 'ethers'

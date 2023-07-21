@@ -2,14 +2,14 @@ import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { Signer } from '@ethersproject/abstract-signer'
 import { BigNumber } from '@ethersproject/bignumber'
 import { Provider } from '@ethersproject/providers'
-import { generateTypedData, validateEip3770Address } from '@safe-global/protocol-kit/utils'
+import { generateTypedData, validateEip3770Address } from '@rndlabs/safe-protocol-kit/utils'
 import {
   Eip3770Address,
   EthAdapter,
   EthAdapterTransaction,
   GetContractProps,
   SafeTransactionEIP712Args
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import { ethers } from 'ethers'
 import CompatibilityFallbackHandlerContractEthers from './contracts/CompatibilityFallbackHandler/CompatibilityFallbackHandlerEthersContract'
 import CreateCallEthersContract from './contracts/CreateCall/CreateCallEthersContract'

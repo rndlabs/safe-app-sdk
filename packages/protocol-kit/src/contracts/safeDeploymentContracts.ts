@@ -1,4 +1,4 @@
-import { ContractNetworkConfig } from '@safe-global/protocol-kit/types'
+import { ContractNetworkConfig } from '@rndlabs/safe-protocol-kit/types'
 import {
   CompatibilityFallbackHandlerContract,
   CreateCallContract,
@@ -10,7 +10,7 @@ import {
   SafeVersion,
   SignMessageLibContract,
   SimulateTxAccessorContract
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import {
   DeploymentFilter,
   SingletonDeployment,

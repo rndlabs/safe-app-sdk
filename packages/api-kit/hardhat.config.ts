@@ -50,7 +50,7 @@ const config: HardhatUserConfig = {
   },
   //@ts-expect-error Type not found
   compilerOptions: {
-    paths: { '^@safe-global/protocol-kit/(.*)$': ['../protocol-kit/src/*'] }
+    paths: { '^@rndlabs/safe-protocol-kit/(.*)$': ['../protocol-kit/src/*'] }
   }
 }
 

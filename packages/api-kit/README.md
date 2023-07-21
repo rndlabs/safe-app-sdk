@@ -61,7 +61,7 @@ Once the instance of `EthersAdapter` or `Web3Adapter` is created, it can be used
 ### Initialize the SafeApiKit
 
 ```js
-import SafeApiKit from '@safe-global/api-kit'
+import SafeApiKit from '@rndlabs/safe-api-kit'
 
 const safeService = new SafeApiKit({
   txServiceUrl: 'https://safe-transaction-mainnet.safe.global',

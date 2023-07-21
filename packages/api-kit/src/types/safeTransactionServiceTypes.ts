@@ -1,8 +1,5 @@
 import { Signer } from '@ethersproject/abstract-signer'
-import {
-  SafeMultisigTransactionResponse,
-  SafeTransactionData
-} from '@safe-global/safe-core-sdk-types'
+import { SafeMultisigTransactionResponse, SafeTransactionData } from '@rndlabs/safe-core-sdk-types'
 
 export type SafeServiceInfoResponse = {
   readonly name: string

@@ -1,6 +1,6 @@
-import { isRestrictedAddress, sameString } from '@safe-global/protocol-kit/utils/address'
-import { SENTINEL_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
-import { EthAdapter, SafeContract } from '@safe-global/safe-core-sdk-types'
+import { isRestrictedAddress, sameString } from '@rndlabs/safe-protocol-kit/utils/address'
+import { SENTINEL_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
+import { EthAdapter, SafeContract } from '@rndlabs/safe-core-sdk-types'
 
 class ModuleManager {
   #ethAdapter: EthAdapter

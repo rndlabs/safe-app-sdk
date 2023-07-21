@@ -1,5 +1,5 @@
 import { Signer } from '@ethersproject/abstract-signer'
-import SafeApiKit, { AddSafeDelegateProps } from '@safe-global/api-kit/index'
+import SafeApiKit, { AddSafeDelegateProps } from '@rndlabs/safe-api-kit/index'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import config from '../utils/config'

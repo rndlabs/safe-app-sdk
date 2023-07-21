@@ -1,28 +1,28 @@
-import Safe from '@safe-global/protocol-kit/Safe'
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
+import Safe from '@rndlabs/safe-protocol-kit/Safe'
+import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
 import {
   getProxyFactoryContract,
   getSafeContract
-} from '@safe-global/protocol-kit/contracts/safeDeploymentContracts'
+} from '@rndlabs/safe-protocol-kit/contracts/safeDeploymentContracts'
 import {
   PREDETERMINED_SALT_NONCE,
   encodeSetupCallData,
   predictSafeAddress,
   validateSafeAccountConfig,
   validateSafeDeploymentConfig
-} from '@safe-global/protocol-kit/contracts/utils'
+} from '@rndlabs/safe-protocol-kit/contracts/utils'
 import {
   ContractNetworksConfig,
   SafeAccountConfig,
   SafeDeploymentConfig
-} from '@safe-global/protocol-kit/types'
+} from '@rndlabs/safe-protocol-kit/types'
 import {
   EthAdapter,
   SafeContract,
   SafeProxyFactoryContract,
   SafeVersion,
   TransactionOptions
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 
 export interface DeploySafeProps {
   safeAccountConfig: SafeAccountConfig

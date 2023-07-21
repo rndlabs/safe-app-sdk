@@ -6,8 +6,8 @@ import {
   getSafeContractDeployment,
   getSafeProxyFactoryContractDeployment,
   getSignMessageLibContractDeployment
-} from '@safe-global/protocol-kit/contracts/safeDeploymentContracts'
-import { SafeVersion } from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-protocol-kit/contracts/safeDeploymentContracts'
+import { SafeVersion } from '@rndlabs/safe-core-sdk-types'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { deployments, waffle } from 'hardhat'

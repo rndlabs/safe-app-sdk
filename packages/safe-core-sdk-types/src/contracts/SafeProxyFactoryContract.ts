@@ -1,4 +1,4 @@
-import { TransactionOptions } from '@safe-global/safe-core-sdk-types/types'
+import { TransactionOptions } from '@rndlabs/safe-core-sdk-types/types'
 
 export interface CreateProxyProps {
   safeMasterCopyAddress: string

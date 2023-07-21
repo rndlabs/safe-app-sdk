@@ -1,15 +1,15 @@
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
+import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
 import {
   getMultiSendCallOnlyContract,
   getMultiSendContract,
   getSafeContract
-} from '@safe-global/protocol-kit/contracts/safeDeploymentContracts'
-import { ContractNetworksConfig, SafeConfig } from '@safe-global/protocol-kit/types'
+} from '@rndlabs/safe-protocol-kit/contracts/safeDeploymentContracts'
+import { ContractNetworksConfig, SafeConfig } from '@rndlabs/safe-protocol-kit/types'
 import {
   MultiSendCallOnlyContract,
   MultiSendContract,
   SafeContract
-} from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-core-sdk-types'
 import { SafeVersion } from 'packages/safe-core-sdk-types/dist/src/types'
 import { isSafeConfigWithPredictedSafe } from '../utils/types'
 

@@ -3,9 +3,9 @@ import {
   isZeroAddress,
   SAFE_FEATURES,
   sameString
-} from '@safe-global/protocol-kit/utils'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
-import { EthAdapter, SafeContract } from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-protocol-kit/utils'
+import { ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
+import { EthAdapter, SafeContract } from '@rndlabs/safe-core-sdk-types'
 
 class GuardManager {
   #ethAdapter: EthAdapter

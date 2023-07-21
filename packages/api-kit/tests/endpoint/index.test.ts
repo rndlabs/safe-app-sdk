@@ -4,11 +4,11 @@ import SafeApiKit, {
   AddSafeDelegateProps,
   DeleteSafeDelegateProps,
   SafeMultisigTransactionEstimate
-} from '@safe-global/api-kit/index'
-import { getTxServiceBaseUrl } from '@safe-global/api-kit/utils'
-import * as httpRequests from '@safe-global/api-kit/utils/httpRequests'
-import Safe from '@safe-global/protocol-kit'
-import { EthAdapter, SafeTransactionDataPartial } from '@safe-global/safe-core-sdk-types'
+} from '@rndlabs/safe-api-kit/index'
+import { getTxServiceBaseUrl } from '@rndlabs/safe-api-kit/utils'
+import * as httpRequests from '@rndlabs/safe-api-kit/utils/httpRequests'
+import Safe from '@rndlabs/safe-protocol-kit'
+import { EthAdapter, SafeTransactionDataPartial } from '@rndlabs/safe-core-sdk-types'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import sinon from 'sinon'

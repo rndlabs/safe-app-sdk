@@ -1,8 +1,8 @@
-import { safeVersionDeployed } from '@safe-global/protocol-kit/hardhat/deploy/deploy-contracts'
+import { safeVersionDeployed } from '@rndlabs/safe-protocol-kit/hardhat/deploy/deploy-contracts'
 import Safe, {
   PredictedSafeProps,
   SafeTransactionOptionalProps
-} from '@safe-global/protocol-kit/index'
+} from '@rndlabs/safe-protocol-kit/index'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { deployments, waffle } from 'hardhat'

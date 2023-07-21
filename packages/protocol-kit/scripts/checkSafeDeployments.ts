@@ -1,4 +1,4 @@
-import { SafeVersion } from '@safe-global/safe-core-sdk-types'
+import { SafeVersion } from '@rndlabs/safe-core-sdk-types'
 import { DeploymentFilter, getSafeSingletonDeployment } from '@safe-global/safe-deployments'
 import { networks } from '../src/utils/eip-3770/config'
 
