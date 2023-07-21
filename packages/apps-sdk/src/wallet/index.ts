@@ -1,11 +1,11 @@
-import { Methods, RestrictedMethods } from '../communication/methods'
-import { Communicator } from '../types'
+import { Methods, RestrictedMethods } from '../communication/methods.js'
+import { Communicator } from '../types/index.js'
 import {
   PermissionRequest,
   Permission,
   PermissionsError,
   PERMISSIONS_REQUEST_REJECTED
-} from '../types/permissions'
+} from '../types/permissions.js'
 
 class Wallet {
   private readonly communicator: Communicator

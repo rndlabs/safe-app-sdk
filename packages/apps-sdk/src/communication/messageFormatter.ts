@@ -4,10 +4,10 @@ import {
   RequestId,
   SuccessResponse,
   MethodToResponse
-} from '../types'
-import { getSDKVersion } from '../utils'
-import { Methods } from './methods'
-import { generateRequestId } from './utils'
+} from '../types/index.js'
+import { getSDKVersion } from '../utils.js'
+import { Methods } from './methods.js'
+import { generateRequestId } from './utils.js'
 
 class MessageFormatter {
   static makeRequest = <M extends Methods = Methods, P = unknown>(

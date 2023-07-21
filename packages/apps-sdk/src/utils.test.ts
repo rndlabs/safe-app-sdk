@@ -1,4 +1,4 @@
-import { getSDKVersion } from './utils'
+import { getSDKVersion } from './utils.js'
 import pkg from '../package.json'
 
 // Mock package.json

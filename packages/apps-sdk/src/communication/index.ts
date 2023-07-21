@@ -1,6 +1,6 @@
-import { MessageFormatter } from './messageFormatter'
-import { Methods } from './methods'
-import { InterfaceMessageEvent, Communicator, Response, SuccessResponse } from '../types'
+import { MessageFormatter } from './messageFormatter.js'
+import { Methods } from './methods.js'
+import { InterfaceMessageEvent, Communicator, Response, SuccessResponse } from '../types/index.js'
 
 // eslint-disable-next-line
 type Callback = (response: any) => void
