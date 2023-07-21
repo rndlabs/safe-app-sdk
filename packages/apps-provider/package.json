@@ -1,6 +1,6 @@
 {
   "name": "@rndlabs/safe-apps-provider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A provider wrapper of Safe Apps SDK",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
