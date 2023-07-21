@@ -1,5 +1,5 @@
 import { GenerateTypedData, SafeTransactionEIP712Args } from '@rndlabs/safe-core-sdk-types'
-import semverSatisfies from 'semver/functions/satisfies'
+import semverSatisfies from 'semver/functions/satisfies.js'
 
 const EQ_OR_GT_1_3_0 = '>=1.3.0'
 

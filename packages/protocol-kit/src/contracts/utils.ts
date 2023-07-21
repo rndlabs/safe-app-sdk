@@ -10,7 +10,7 @@ import {
   SafeVersion
 } from '@rndlabs/safe-core-sdk-types'
 import { generateAddress2, keccak256, toBuffer } from 'ethereumjs-util'
-import semverSatisfies from 'semver/functions/satisfies'
+import semverSatisfies from 'semver/functions/satisfies.js'
 import {
   getCompatibilityFallbackHandlerContract,
   getProxyFactoryContract,

@@ -14,7 +14,7 @@ import {
   SafeTransactionDataPartial,
   SafeVersion
 } from '@rndlabs/safe-core-sdk-types'
-import semverSatisfies from 'semver/functions/satisfies'
+import semverSatisfies from 'semver/functions/satisfies.js'
 import { hexToNumber, hexToNumberString, toChecksumAddress } from 'web3-utils'
 import { estimateGas, estimateTxGas } from './gas'
 
