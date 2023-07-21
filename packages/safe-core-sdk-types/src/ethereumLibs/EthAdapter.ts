@@ -1,17 +1,17 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CompatibilityFallbackHandlerContract } from '@rndlabs/safe-core-sdk-types/contracts/CompatibilityFallbackHandlerContract'
-import { CreateCallContract } from '@rndlabs/safe-core-sdk-types/contracts/CreateCallContract'
-import { MultiSendCallOnlyContract } from '@rndlabs/safe-core-sdk-types/contracts/MultiSendCallOnlyContract'
-import { MultiSendContract } from '@rndlabs/safe-core-sdk-types/contracts/MultiSendContract'
-import { SafeContract } from '@rndlabs/safe-core-sdk-types/contracts/SafeContract'
-import { SafeProxyFactoryContract } from '@rndlabs/safe-core-sdk-types/contracts/SafeProxyFactoryContract'
-import { SignMessageLibContract } from '@rndlabs/safe-core-sdk-types/contracts/SignMessageLibContract'
-import { SimulateTxAccessorContract } from '@rndlabs/safe-core-sdk-types/contracts/SimulateTxAccessorContract'
+import { CompatibilityFallbackHandlerContract } from '../contracts/CompatibilityFallbackHandlerContract.js'
+import { CreateCallContract } from '../contracts/CreateCallContract.js'
+import { MultiSendCallOnlyContract } from '../contracts/MultiSendCallOnlyContract.js'
+import { MultiSendContract } from '../contracts/MultiSendContract.js'
+import { SafeContract } from '../contracts/SafeContract.js'
+import { SafeProxyFactoryContract } from '../contracts/SafeProxyFactoryContract.js'
+import { SignMessageLibContract } from '../contracts/SignMessageLibContract.js'
+import { SimulateTxAccessorContract } from '../contracts/SimulateTxAccessorContract.js'
 import {
   Eip3770Address,
   SafeTransactionEIP712Args,
   SafeVersion
-} from '@rndlabs/safe-core-sdk-types/types'
+} from '../types.js'
 import { SingletonDeployment } from '@safe-global/safe-deployments'
 
 export type AbiType = 'function' | 'constructor' | 'event' | 'fallback' | 'receive'

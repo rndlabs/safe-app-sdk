@@ -1,4 +1,4 @@
-import { TransactionOptions, TransactionResult } from '@rndlabs/safe-core-sdk-types/types'
+import { TransactionOptions, TransactionResult } from '../types.js'
 
 export interface SignMessageLibContract {
   getAddress(): string
