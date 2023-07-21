@@ -1,14 +1,11 @@
 {
   "name": "@rndlabs/safe-apps-sdk",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "SDK developed to integrate third-party apps with Safe app.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
-    "dist/**/*",
-    "src/**/*",
-    "CHANGELOG.md",
-    "README.md"
+    "dist"
   ],
   "keywords": [
     "Safe",
