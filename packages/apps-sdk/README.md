@@ -1,3 +1,5 @@
+# USE AT YOUR OWN RISK
+
 # Safe Apps SDK
 
 [![npm](https://img.shields.io/npm/v/@rndlabs/safe-apps-sdk)](https://www.npmjs.com/package/@rndlabs/safe-apps-sdk)
