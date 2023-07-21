@@ -1,6 +1,6 @@
 {
   "name": "@rndlabs/safe-apps-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "SDK developed to integrate third-party apps with Safe app.",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -24,12 +24,11 @@
   "author": "Safe (https://safe.global)",
   "license": "MIT",
   "dependencies": {
-    "@rndlabs/safe-gateway-typescript-sdk": "^0.0.1",
+    "@rndlabs/safe-gateway-typescript-sdk": "^0.0.4",
     "typescript": "^5.1.6",
     "viem": "^1.3.1"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
     "typescript": "^5.1.6"
   },
   "repository": {

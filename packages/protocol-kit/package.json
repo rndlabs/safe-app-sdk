@@ -1,6 +1,6 @@
 {
   "name": "@rndlabs/safe-protocol-kit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "SDK to interact with Safe smart contracts",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -32,7 +32,7 @@
   ],
   "homepage": "https://github.com/safe-global/safe-core-sdk#readme",
   "devDependencies": {
-    "@rndlabs/safe-core-sdk-types": "^0.0.1",
+    "@rndlabs/safe-core-sdk-types": "^0.0.4",
     "@typechain/ethers-v5": "^10.2.0",
     "@types/chai": "^4.3.5",
     "@types/chai-as-promised": "^7.1.5",
