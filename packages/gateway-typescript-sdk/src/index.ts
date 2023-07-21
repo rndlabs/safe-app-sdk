@@ -23,14 +23,14 @@ import type { DecodedDataResponse } from './types/decoded-data.js'
 import type { SafeMessage, SafeMessageListPage } from './types/safe-messages.js'
 import { DEFAULT_BASE_URL } from './config.js'
 
-export * from './types/safe-info'
-export * from './types/safe-apps'
-export * from './types/transactions'
-export * from './types/chains'
-export * from './types/common'
-export * from './types/master-copies'
-export * from './types/decoded-data'
-export * from './types/safe-messages'
+export * from './types/safe-info.js'
+export * from './types/safe-apps.js'
+export * from './types/transactions.js'
+export * from './types/chains.js'
+export * from './types/common.js'
+export * from './types/master-copies.js'
+export * from './types/decoded-data.js'
+export * from './types/safe-messages.js'
 
 // Can be set externally to a different CGW host
 let baseUrl: string = DEFAULT_BASE_URL
