@@ -1,4 +1,4 @@
-import type { Page } from './common'
+import type { Page } from './common.js'
 
 export enum RPC_AUTHENTICATION {
   API_KEY_PATH = 'API_KEY_PATH',

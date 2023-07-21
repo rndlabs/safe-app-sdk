@@ -1,5 +1,5 @@
-import { fetchData, insertParams, stringifyQuery } from './utils'
-import type { GetEndpoint, paths, PostEndpoint, Primitive } from './types/api'
+import { fetchData, insertParams, stringifyQuery } from './utils.js'
+import type { GetEndpoint, paths, PostEndpoint, Primitive } from './types/api.js'
 
 function makeUrl(
   baseUrl: string,

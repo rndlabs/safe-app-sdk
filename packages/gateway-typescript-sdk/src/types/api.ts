@@ -4,7 +4,7 @@ import type {
   SafeBalanceResponse,
   SafeCollectibleResponse,
   SafeCollectiblesPage
-} from './common'
+} from './common.js'
 import type {
   MultisigTransactionRequest,
   TransactionDetails,
@@ -14,18 +14,18 @@ import type {
   SafeIncomingTransfersResponse,
   SafeModuleTransactionsResponse,
   SafeMultisigTransactionsResponse
-} from './transactions'
-import type { SafeInfo } from './safe-info'
-import type { ChainListResponse, ChainInfo } from './chains'
-import type { SafeAppsResponse } from './safe-apps'
-import type { DecodedDataRequest, DecodedDataResponse } from './decoded-data'
-import type { MasterCopyReponse } from './master-copies'
+} from './transactions.js'
+import type { SafeInfo } from './safe-info.js'
+import type { ChainListResponse, ChainInfo } from './chains.js'
+import type { SafeAppsResponse } from './safe-apps.js'
+import type { DecodedDataRequest, DecodedDataResponse } from './decoded-data.js'
+import type { MasterCopyReponse } from './master-copies.js'
 import type {
   ConfirmSafeMessageRequest,
   ProposeSafeMessageRequest,
   SafeMessage,
   SafeMessageListPage
-} from './safe-messages'
+} from './safe-messages.js'
 
 export type Primitive = string | number | boolean | null
 

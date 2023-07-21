@@ -1,5 +1,5 @@
-import { getEndpoint, postEndpoint } from './endpoint'
-import type { operations } from './types/api'
+import { getEndpoint, postEndpoint } from './endpoint.js'
+import type { operations } from './types/api.js'
 import type {
   SafeTransactionEstimation,
   TransactionDetails,
@@ -7,21 +7,21 @@ import type {
   SafeIncomingTransfersResponse,
   SafeModuleTransactionsResponse,
   SafeMultisigTransactionsResponse
-} from './types/transactions'
+} from './types/transactions.js'
 import type {
   FiatCurrencies,
   OwnedSafes,
   SafeBalanceResponse,
   SafeCollectibleResponse,
   SafeCollectiblesPage
-} from './types/common'
-import type { SafeInfo } from './types/safe-info'
-import type { ChainListResponse, ChainInfo } from './types/chains'
-import type { SafeAppsResponse } from './types/safe-apps'
-import type { MasterCopyReponse } from './types/master-copies'
-import type { DecodedDataResponse } from './types/decoded-data'
-import type { SafeMessage, SafeMessageListPage } from './types/safe-messages'
-import { DEFAULT_BASE_URL } from './config'
+} from './types/common.js'
+import type { SafeInfo } from './types/safe-info.js'
+import type { ChainListResponse, ChainInfo } from './types/chains.js'
+import type { SafeAppsResponse } from './types/safe-apps.js'
+import type { MasterCopyReponse } from './types/master-copies.js'
+import type { DecodedDataResponse } from './types/decoded-data.js'
+import type { SafeMessage, SafeMessageListPage } from './types/safe-messages.js'
+import { DEFAULT_BASE_URL } from './config.js'
 
 export * from './types/safe-info'
 export * from './types/safe-apps'

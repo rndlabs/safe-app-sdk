@@ -1,4 +1,4 @@
-import type { AddressEx, Page, TokenInfo } from './common'
+import type { AddressEx, Page, TokenInfo } from './common.js'
 
 export type ParamValue = string | ParamValue[]
 

@@ -1,4 +1,4 @@
-import type { AddressEx } from './common'
+import type { AddressEx } from './common.js'
 
 export enum ImplementationVersionState {
   UP_TO_DATE = 'UP_TO_DATE',

@@ -1,4 +1,4 @@
-import type { AddressEx, Page } from './common'
+import type { AddressEx, Page } from './common.js'
 
 export enum SafeMessageListItemType {
   DATE_LABEL = 'DATE_LABEL',
