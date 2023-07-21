@@ -7,11 +7,7 @@ import { SafeContract } from '../contracts/SafeContract.js'
 import { SafeProxyFactoryContract } from '../contracts/SafeProxyFactoryContract.js'
 import { SignMessageLibContract } from '../contracts/SignMessageLibContract.js'
 import { SimulateTxAccessorContract } from '../contracts/SimulateTxAccessorContract.js'
-import {
-  Eip3770Address,
-  SafeTransactionEIP712Args,
-  SafeVersion
-} from '../types.js'
+import { Eip3770Address, SafeTransactionEIP712Args, SafeVersion } from '../types.js'
 import { SingletonDeployment } from '@safe-global/safe-deployments'
 
 export type AbiType = 'function' | 'constructor' | 'event' | 'fallback' | 'receive'

@@ -78,4 +78,4 @@ class PostMessageCommunicator implements Communicator {
 }
 
 export default PostMessageCommunicator
-export * from './methods'
+export * from './methods.js'
