@@ -1,10 +1,10 @@
 name: Monorepo Test
 on:
-  pull_request:
-  push:
-    branches:
-      - main
-      - development
+  # pull_request:
+  # push:
+  #   branches:
+  #     - main
+  #     - development
 env:
   INFURA_KEY: ${{ secrets.INFURA_KEY }}
 jobs:

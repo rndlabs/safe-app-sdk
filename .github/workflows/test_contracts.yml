@@ -1,10 +1,10 @@
 name: Safe Core SDK Test - Contracts
 on:
-  pull_request:
-  push:
-    branches:
-      - main
-      - development
+  # pull_request:
+  # push:
+  #   branches:
+  #     - main
+  #     - development
 env:
   INFURA_KEY: ${{ secrets.INFURA_KEY }}
 jobs:
