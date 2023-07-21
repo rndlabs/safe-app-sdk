@@ -19,7 +19,6 @@
     "lint:fix": "yarn lint --fix",
     "unbuild": "rimraf dist",
     "build": "yarn unbuild && tsc && tsc-alias",
-    "prepublishOnly": "yarn lint && yarn test:check && yarn build",
     "test": "jest --watch --coverage .",
     "test:check": "jest --testPathPattern=tests",
     "test:ci": "jest --ci --coverage --json --watchAll=false --testLocationInResults --runInBand --testPathPattern=tests",
