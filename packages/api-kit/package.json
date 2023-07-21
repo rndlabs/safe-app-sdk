@@ -58,5 +58,8 @@
     "@types/node-fetch": "^2.6.4",
     "node-fetch": "^2.6.6"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module"
 }

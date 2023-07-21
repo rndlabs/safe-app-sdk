@@ -60,5 +60,8 @@
     "typescript": "^5.1.6",
     "web3-utils": "^1.8.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module"
 }

@@ -25,5 +25,8 @@
     "format:check": "prettier --check \"*/**/*.{js,json,md,ts}\"",
     "format": "prettier --write \"*/**/*.{js,json,md,ts}\""
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module"
 }
