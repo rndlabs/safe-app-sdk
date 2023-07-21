@@ -1,4 +1,4 @@
-import { SafeTransactionOptionalProps } from '@rndlabs/safe-protocol-kit/utils/transactions'
+import { SafeTransactionOptionalProps } from '../utils/transactions/index.js'
 import {
   EthAdapter,
   MetaTransactionData,

@@ -1,4 +1,4 @@
-import { SENTINEL_ADDRESS, ZERO_ADDRESS } from './constants'
+import { SENTINEL_ADDRESS, ZERO_ADDRESS } from './constants.js'
 
 export function sameString(str1: string, str2: string): boolean {
   return str1.toLowerCase() === str2.toLowerCase()

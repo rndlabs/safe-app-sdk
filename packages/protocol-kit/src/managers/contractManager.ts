@@ -1,17 +1,17 @@
-import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
+import { DEFAULT_SAFE_VERSION } from '../contracts/config.js'
 import {
   getMultiSendCallOnlyContract,
   getMultiSendContract,
   getSafeContract
-} from '@rndlabs/safe-protocol-kit/contracts/safeDeploymentContracts'
-import { ContractNetworksConfig, SafeConfig } from '@rndlabs/safe-protocol-kit/types'
+} from '../contracts/safeDeploymentContracts.js'
+import { ContractNetworksConfig, SafeConfig } from '../types/index.js'
 import {
   MultiSendCallOnlyContract,
   MultiSendContract,
   SafeContract
 } from '@rndlabs/safe-core-sdk-types'
 import { SafeVersion } from 'packages/safe-core-sdk-types/dist/src/types'
-import { isSafeConfigWithPredictedSafe } from '../utils/types'
+import { isSafeConfigWithPredictedSafe } from '../utils/types.js'
 
 class ContractManager {
   #contractNetworks?: ContractNetworksConfig

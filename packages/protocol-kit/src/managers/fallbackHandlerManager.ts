@@ -1,10 +1,5 @@
-import {
-  hasSafeFeature,
-  isZeroAddress,
-  SAFE_FEATURES,
-  sameString
-} from '@rndlabs/safe-protocol-kit/utils'
-import { ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
+import { hasSafeFeature, isZeroAddress, SAFE_FEATURES, sameString } from '../utils/index.js'
+import { ZERO_ADDRESS } from '../utils/constants.js'
 import { EthAdapter, SafeContract } from '@rndlabs/safe-core-sdk-types'
 
 class FallbackHandlerManager {

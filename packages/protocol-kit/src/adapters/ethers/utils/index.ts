@@ -1,6 +1,6 @@
 import { TypedDataSigner } from '@ethersproject/abstract-signer'
 import { ContractTransaction } from '@ethersproject/contracts'
-import { EthersTransactionOptions, EthersTransactionResult } from '../types'
+import { EthersTransactionOptions, EthersTransactionResult } from '../types.js'
 import { Signer } from '@ethersproject/abstract-signer'
 import { Provider } from '@ethersproject/providers'
 

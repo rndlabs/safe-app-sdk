@@ -2,7 +2,7 @@ import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { Signer } from '@ethersproject/abstract-signer'
 import { BigNumber } from '@ethersproject/bignumber'
 import { Provider } from '@ethersproject/providers'
-import { generateTypedData, validateEip3770Address } from '@rndlabs/safe-protocol-kit/utils'
+import { generateTypedData, validateEip3770Address } from '../../utils/index.js'
 import {
   Eip3770Address,
   EthAdapter,

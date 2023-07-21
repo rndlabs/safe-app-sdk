@@ -11,13 +11,13 @@ import {
   TransactionOptions,
   TransactionResult
 } from '@rndlabs/safe-core-sdk-types'
-import { DEFAULT_SAFE_VERSION } from './contracts/config'
-import { predictSafeAddress } from './contracts/utils'
-import ContractManager from './managers/contractManager'
-import FallbackHandlerManager from './managers/fallbackHandlerManager'
-import GuardManager from './managers/guardManager'
-import ModuleManager from './managers/moduleManager'
-import OwnerManager from './managers/ownerManager'
+import { DEFAULT_SAFE_VERSION } from './contracts/config.js'
+import { predictSafeAddress } from './contracts/utils.js'
+import ContractManager from './managers/contractManager.js'
+import FallbackHandlerManager from './managers/fallbackHandlerManager.js'
+import GuardManager from './managers/guardManager.js'
+import ModuleManager from './managers/moduleManager.js'
+import OwnerManager from './managers/ownerManager.js'
 import {
   AddOwnerTxParams,
   ConnectSafeConfig,
@@ -27,7 +27,7 @@ import {
   SafeConfig,
   SafeConfigProps,
   SwapOwnerTxParams
-} from './types'
+} from './types/index.js'
 import {
   EthSafeSignature,
   SAFE_FEATURES,
@@ -35,20 +35,20 @@ import {
   isMetaTransactionArray,
   isSafeMultisigTransactionResponse,
   sameString
-} from './utils'
+} from './utils/index.js'
 import {
   generateEIP712Signature,
   generatePreValidatedSignature,
   generateSignature
-} from './utils/signatures/utils'
-import EthSafeTransaction from './utils/transactions/SafeTransaction'
-import { SafeTransactionOptionalProps } from './utils/transactions/types'
+} from './utils/signatures/utils.js'
+import EthSafeTransaction from './utils/transactions/SafeTransaction.js'
+import { SafeTransactionOptionalProps } from './utils/transactions/types.js'
 import {
   encodeMultiSendData,
   standardizeMetaTransactionData,
   standardizeSafeTransactionData
-} from './utils/transactions/utils'
-import { isSafeConfigWithPredictedSafe } from './utils/types'
+} from './utils/transactions/utils.js'
+import { isSafeConfigWithPredictedSafe } from './utils/types.js'
 
 class Safe {
   #predictedSafe?: PredictedSafeProps

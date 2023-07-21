@@ -1,5 +1,5 @@
-import { isRestrictedAddress, sameString } from '@rndlabs/safe-protocol-kit/utils/address'
-import { SENTINEL_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
+import { isRestrictedAddress, sameString } from '../utils/address.js'
+import { SENTINEL_ADDRESS } from '../utils/constants.js'
 import { EthAdapter, SafeContract } from '@rndlabs/safe-core-sdk-types'
 
 class ModuleManager {

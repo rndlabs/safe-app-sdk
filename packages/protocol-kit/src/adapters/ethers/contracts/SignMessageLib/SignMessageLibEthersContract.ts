@@ -1,13 +1,13 @@
 import {
   EthersTransactionOptions,
   EthersTransactionResult
-} from '@rndlabs/safe-protocol-kit/adapters/ethers/types'
-import { toTxResult } from '@rndlabs/safe-protocol-kit/adapters/ethers/utils'
+} from '../../../../adapters/ethers/types.js'
+import { toTxResult } from '../../../../adapters/ethers/utils/index.js'
 import {
   Sign_message_lib as SignMessageLib_V1_3_0,
   Sign_message_libInterface as SignMessageLibContractInterface
-} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Sign_message_lib'
-import { Sign_message_lib as SignMessageLib_V1_4_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1/Sign_message_lib'
+} from '../../../../../typechain/src/ethers-v5/v1.3.0/Sign_message_lib.js'
+import { Sign_message_lib as SignMessageLib_V1_4_1 } from '../../../../../typechain/src/ethers-v5/v1.4.1/Sign_message_lib.js'
 import { SignMessageLibContract } from '@rndlabs/safe-core-sdk-types'
 
 abstract class SignMessageLibEthersContract implements SignMessageLibContract {

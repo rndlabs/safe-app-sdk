@@ -1,4 +1,4 @@
-import { SafeConfig, SafeConfigWithPredictedSafe } from '../types'
+import { SafeConfig, SafeConfigWithPredictedSafe } from '../types/index.js'
 
 export function isSafeConfigWithPredictedSafe(
   config: SafeConfig

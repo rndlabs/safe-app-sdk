@@ -1,9 +1,9 @@
-import { Multi_send as MultiSend_V1_1_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.1.1/Multi_send'
+import { Multi_send as MultiSend_V1_1_1 } from '../../../../../typechain/src/ethers-v5/v1.1.1/Multi_send.js'
 import {
   Multi_send as MultiSend_V1_3_0,
   Multi_sendInterface as MultiSendInterface
-} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Multi_send'
-import { Multi_send as MultiSend_V1_4_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1/Multi_send'
+} from '../../../../../typechain/src/ethers-v5/v1.3.0/Multi_send.js'
+import { Multi_send as MultiSend_V1_4_1 } from '../../../../../typechain/src/ethers-v5/v1.4.1/Multi_send.js'
 import { MultiSendContract } from '@rndlabs/safe-core-sdk-types'
 
 abstract class MultiSendEthersContract implements MultiSendContract {

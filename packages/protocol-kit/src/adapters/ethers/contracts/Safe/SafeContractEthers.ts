@@ -2,16 +2,16 @@ import { BigNumber } from '@ethersproject/bignumber'
 import {
   EthersTransactionOptions,
   EthersTransactionResult
-} from '@rndlabs/safe-protocol-kit/adapters/ethers/types'
-import { toTxResult } from '@rndlabs/safe-protocol-kit/adapters/ethers/utils'
-import { Gnosis_safe as Safe_V1_0_0 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.0.0/Gnosis_safe'
-import { Gnosis_safe as Safe_V1_1_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.1.1/Gnosis_safe'
-import { Gnosis_safe as Safe_V1_2_0 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.2.0/Gnosis_safe'
+} from '../../../../adapters/ethers/types.js'
+import { toTxResult } from '../../../../adapters/ethers/utils/index.js'
+import { Gnosis_safe as Safe_V1_0_0 } from '../../../../../typechain/src/ethers-v5/v1.0.0/Gnosis_safe'
+import { Gnosis_safe as Safe_V1_1_1 } from '../../../../../typechain/src/ethers-v5/v1.1.1/Gnosis_safe'
+import { Gnosis_safe as Safe_V1_2_0 } from '../../../../../typechain/src/ethers-v5/v1.2.0/Gnosis_safe.js'
 import {
   Gnosis_safeInterface as SafeInterface,
   Gnosis_safe as Safe_V1_3_0
-} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Gnosis_safe'
-import { Safe as Safe_V1_4_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1/Safe'
+} from '../../../../../typechain/src/ethers-v5/v1.3.0/Gnosis_safe'
+import { Safe as Safe_V1_4_1 } from '../../../../../typechain/src/ethers-v5/v1.4.1/Safe'
 import {
   SafeContract,
   SafeSetupConfig,

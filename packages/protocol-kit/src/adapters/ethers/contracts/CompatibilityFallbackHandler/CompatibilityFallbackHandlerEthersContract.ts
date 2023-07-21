@@ -1,8 +1,8 @@
 import {
   Compatibility_fallback_handler as CompatibilityFallbackHandler_V1_3_0,
   Compatibility_fallback_handlerInterface as CompatibilityFallbackHandlerInterface
-} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Compatibility_fallback_handler'
-import { Compatibility_fallback_handler as CompatibilityFallbackHandler_V1_4_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1/Compatibility_fallback_handler'
+} from '../../../../../typechain/src/ethers-v5/v1.3.0/Compatibility_fallback_handler.js'
+import { Compatibility_fallback_handler as CompatibilityFallbackHandler_V1_4_1 } from '../../../../../typechain/src/ethers-v5/v1.4.1/Compatibility_fallback_handler.js'
 import { CompatibilityFallbackHandlerContract } from '@rndlabs/safe-core-sdk-types'
 
 abstract class CompatibilityFallbackHandlerEthersContract

@@ -1,21 +1,14 @@
-import Safe from '@rndlabs/safe-protocol-kit/Safe'
-import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
-import {
-  getProxyFactoryContract,
-  getSafeContract
-} from '@rndlabs/safe-protocol-kit/contracts/safeDeploymentContracts'
+import Safe from '../Safe.js'
+import { DEFAULT_SAFE_VERSION } from '../contracts/config.js'
+import { getProxyFactoryContract, getSafeContract } from '../contracts/safeDeploymentContracts.js'
 import {
   PREDETERMINED_SALT_NONCE,
   encodeSetupCallData,
   predictSafeAddress,
   validateSafeAccountConfig,
   validateSafeDeploymentConfig
-} from '@rndlabs/safe-protocol-kit/contracts/utils'
-import {
-  ContractNetworksConfig,
-  SafeAccountConfig,
-  SafeDeploymentConfig
-} from '@rndlabs/safe-protocol-kit/types'
+} from '../contracts/utils.js'
+import { ContractNetworksConfig, SafeAccountConfig, SafeDeploymentConfig } from '../types/index.js'
 import {
   EthAdapter,
   SafeContract,

@@ -1,13 +1,13 @@
 import {
   EthersTransactionOptions,
   EthersTransactionResult
-} from '@rndlabs/safe-protocol-kit/adapters/ethers/types'
-import { toTxResult } from '@rndlabs/safe-protocol-kit/adapters/ethers/utils'
+} from '../../../../adapters/ethers/types.js'
+import { toTxResult } from '../../../../adapters/ethers/utils/index.js'
 import {
   Create_call as CreateCall_V1_3_0,
   Create_callInterface as CreateCallContractInterface
-} from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Create_call'
-import { Create_call as CreateCall_V1_4_1 } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.4.1/Create_call'
+} from '../../../../../typechain/src/ethers-v5/v1.3.0/Create_call.js'
+import { Create_call as CreateCall_V1_4_1 } from '../../../../../typechain/src/ethers-v5/v1.4.1/Create_call.js'
 import { CreateCallContract } from '@rndlabs/safe-core-sdk-types'
 
 abstract class CreateCallEthersContract implements CreateCallContract {

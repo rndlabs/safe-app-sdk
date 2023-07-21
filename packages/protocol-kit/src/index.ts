@@ -1,4 +1,4 @@
-import Safe from './Safe'
+import Safe from './Safe.js'
 import {
   CreateCallEthersContract,
   CreateProxyProps as CreateEthersProxyProps,
@@ -11,8 +11,8 @@ import {
   SafeContractEthers,
   SafeProxyFactoryEthersContract,
   SignMessageLibEthersContract
-} from './adapters/ethers'
-import { DEFAULT_SAFE_VERSION } from './contracts/config'
+} from './adapters/ethers/index.js'
+import { DEFAULT_SAFE_VERSION } from './contracts/config.js'
 import {
   getCompatibilityFallbackHandlerContract,
   getCreateCallContract,
@@ -21,15 +21,15 @@ import {
   getProxyFactoryContract,
   getSafeContract,
   getSignMessageLibContract
-} from './contracts/safeDeploymentContracts'
+} from './contracts/safeDeploymentContracts.js'
 import {
   PREDETERMINED_SALT_NONCE,
   encodeCreateProxyWithNonce,
   encodeSetupCallData,
   predictSafeAddress
-} from './contracts/utils'
-import ContractManager from './managers/contractManager'
-import SafeFactory, { DeploySafeProps, SafeFactoryConfig } from './safeFactory'
+} from './contracts/utils.js'
+import ContractManager from './managers/contractManager.js'
+import SafeFactory, { DeploySafeProps, SafeFactoryConfig } from './safeFactory/index.js'
 import {
   AddOwnerTxParams,
   ConnectSafeConfig,
@@ -46,10 +46,10 @@ import {
   SafeDeploymentConfig,
   StandardizeSafeTransactionDataProps,
   SwapOwnerTxParams
-} from './types'
-import { EthSafeSignature } from './utils'
-import { SafeTransactionOptionalProps } from './utils/transactions/types'
-import { encodeMultiSendData, standardizeSafeTransactionData } from './utils/transactions/utils'
+} from './types/index.js'
+import { EthSafeSignature } from './utils/index.js'
+import { SafeTransactionOptionalProps } from './utils/transactions/types.js'
+import { encodeMultiSendData, standardizeSafeTransactionData } from './utils/transactions/utils.js'
 
 export {
   AddOwnerTxParams,

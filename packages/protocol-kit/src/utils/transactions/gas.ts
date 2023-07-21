@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ContractNetworksConfig } from '@rndlabs/safe-protocol-kit/types'
+import { ContractNetworksConfig } from '../../types/index.js'
 import { EthAdapter, OperationType, SafeContract, SafeVersion } from '@rndlabs/safe-core-sdk-types'
-import { getSimulateTxAccessorContract } from '../../contracts/safeDeploymentContracts'
+import { getSimulateTxAccessorContract } from '../../contracts/safeDeploymentContracts.js'
 
 function estimateDataGasCosts(data: string): number {
   const reducer = (accumulator: number, currentValue: string) => {

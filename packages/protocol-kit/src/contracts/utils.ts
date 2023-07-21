@@ -1,8 +1,8 @@
 import { isAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
-import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
-import { EMPTY_DATA, ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
-import { createMemoizedFunction } from '@rndlabs/safe-protocol-kit/utils/memoized'
+import { DEFAULT_SAFE_VERSION } from './config.js'
+import { EMPTY_DATA, ZERO_ADDRESS } from '../utils/constants.js'
+import { createMemoizedFunction } from '../utils/memoized.js'
 import {
   EthAdapter,
   SafeContract,
@@ -15,8 +15,8 @@ import {
   getCompatibilityFallbackHandlerContract,
   getProxyFactoryContract,
   getSafeContract
-} from '../contracts/safeDeploymentContracts'
-import { ContractNetworkConfig, SafeAccountConfig, SafeDeploymentConfig } from '../types'
+} from './safeDeploymentContracts.js'
+import { ContractNetworkConfig, SafeAccountConfig, SafeDeploymentConfig } from '../types/index.js'
 
 // keccak256(toUtf8Bytes('Safe Account Abstraction'))
 export const PREDETERMINED_SALT_NONCE =

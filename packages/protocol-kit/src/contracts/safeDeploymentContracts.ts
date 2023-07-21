@@ -1,4 +1,4 @@
-import { ContractNetworkConfig } from '@rndlabs/safe-protocol-kit/types'
+import { ContractNetworkConfig } from '../types/index.js'
 import {
   CompatibilityFallbackHandlerContract,
   CreateCallContract,
@@ -24,7 +24,7 @@ import {
   getSignMessageLibDeployment,
   getSimulateTxAccessorDeployment
 } from '@safe-global/safe-deployments'
-import { safeDeploymentsL1ChainIds, safeDeploymentsVersions } from './config'
+import { safeDeploymentsL1ChainIds, safeDeploymentsVersions } from './config.js'
 
 interface GetContractInstanceProps {
   ethAdapter: EthAdapter

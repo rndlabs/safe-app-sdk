@@ -1,13 +1,13 @@
-import EthersAdapter, { EthersAdapterConfig } from './EthersAdapter'
-import CreateCallEthersContract from './contracts/CreateCall/CreateCallEthersContract'
-import MultiSendEthersContract from './contracts/MultiSend/MultiSendEthersContract'
-import MultiSendCallOnlyEthersContract from './contracts/MultiSendCallOnly/MultiSendCallOnlyEthersContract'
-import SafeContractEthers from './contracts/Safe/SafeContractEthers'
+import EthersAdapter, { EthersAdapterConfig } from './EthersAdapter.js'
+import CreateCallEthersContract from './contracts/CreateCall/CreateCallEthersContract.js'
+import MultiSendEthersContract from './contracts/MultiSend/MultiSendEthersContract.js'
+import MultiSendCallOnlyEthersContract from './contracts/MultiSendCallOnly/MultiSendCallOnlyEthersContract.js'
+import SafeContractEthers from './contracts/Safe/SafeContractEthers.js'
 import SafeProxyFactoryEthersContract, {
   CreateProxyProps
-} from './contracts/SafeProxyFactory/SafeProxyFactoryEthersContract'
-import SignMessageLibEthersContract from './contracts/SignMessageLib/SignMessageLibEthersContract'
-import { EthersTransactionOptions, EthersTransactionResult } from './types'
+} from './contracts/SafeProxyFactory/SafeProxyFactoryEthersContract.js'
+import SignMessageLibEthersContract from './contracts/SignMessageLib/SignMessageLibEthersContract.js'
+import { EthersTransactionOptions, EthersTransactionResult } from './types.js'
 
 export {
   CreateCallEthersContract,

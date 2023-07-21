@@ -1,5 +1,5 @@
-import { Multi_send_call_only as MultiSendCallOnly } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Multi_send_call_only'
-import MultiSendCallOnlyEthersContract from '../MultiSendCallOnlyEthersContract'
+import { Multi_send_call_only as MultiSendCallOnly } from '../../../../../../typechain/src/ethers-v5/v1.3.0/Multi_send_call_only.js'
+import MultiSendCallOnlyEthersContract from '../MultiSendCallOnlyEthersContract.js'
 
 class MultiSendCallOnlyContract_V1_3_0_Ethers extends MultiSendCallOnlyEthersContract {
   constructor(public contract: MultiSendCallOnly) {

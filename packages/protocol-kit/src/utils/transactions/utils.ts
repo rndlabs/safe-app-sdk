@@ -1,10 +1,10 @@
 import { Interface } from '@ethersproject/abi'
 import { arrayify } from '@ethersproject/bytes'
 import { pack as solidityPack } from '@ethersproject/solidity'
-import { DEFAULT_SAFE_VERSION } from '@rndlabs/safe-protocol-kit/contracts/config'
-import { StandardizeSafeTransactionDataProps } from '@rndlabs/safe-protocol-kit/types'
-import { hasSafeFeature, SAFE_FEATURES } from '@rndlabs/safe-protocol-kit/utils'
-import { ZERO_ADDRESS } from '@rndlabs/safe-protocol-kit/utils/constants'
+import { DEFAULT_SAFE_VERSION } from '../../contracts/config.js'
+import { StandardizeSafeTransactionDataProps } from '../../types/index.js'
+import { hasSafeFeature, SAFE_FEATURES } from '../../utils/index.js'
+import { ZERO_ADDRESS } from '../../utils/constants.js'
 import {
   MetaTransactionData,
   OperationType,

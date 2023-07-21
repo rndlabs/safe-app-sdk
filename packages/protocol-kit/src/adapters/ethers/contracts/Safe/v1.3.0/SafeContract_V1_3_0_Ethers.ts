@@ -1,16 +1,16 @@
 import {
   EthersTransactionOptions,
   EthersTransactionResult
-} from '@rndlabs/safe-protocol-kit/adapters/ethers/types'
-import { toTxResult } from '@rndlabs/safe-protocol-kit/adapters/ethers/utils'
+} from '../../../../../adapters/ethers/types.js'
+import { toTxResult } from '../../../../../adapters/ethers/utils/index.js'
 import {
   EMPTY_DATA,
   SENTINEL_ADDRESS,
   ZERO_ADDRESS
-} from '@rndlabs/safe-protocol-kit/adapters/ethers/utils/constants'
-import { Gnosis_safe as Safe } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Gnosis_safe'
+} from '../../../../../adapters/ethers/utils/constants.js'
+import { Gnosis_safe as Safe } from '../../../../../../typechain/src/ethers-v5/v1.3.0/Gnosis_safe.js'
 import { SafeSetupConfig } from '@rndlabs/safe-core-sdk-types'
-import SafeContractEthers from '../SafeContractEthers'
+import SafeContractEthers from '../SafeContractEthers.js'
 
 class SafeContract_V1_3_0_Ethers extends SafeContractEthers {
   constructor(public contract: Safe) {

@@ -1,6 +1,6 @@
 import { Eip3770Address } from '@rndlabs/safe-core-sdk-types'
 import { isAddress, isHexStrict } from 'web3-utils'
-import { networks } from './config'
+import { networks } from './config.js'
 
 export function parseEip3770Address(fullAddress: string): Eip3770Address {
   const parts = fullAddress.split(':')

@@ -1,5 +1,5 @@
-import { Create_call as CreateCall } from '@rndlabs/safe-protocol-kit/typechain/src/ethers-v5/v1.3.0/Create_call'
-import CreateCallEthersContract from '../CreateCallEthersContract'
+import { Create_call as CreateCall } from '../../../../../../typechain/src/ethers-v5/v1.3.0/Create_call.js'
+import CreateCallEthersContract from '../CreateCallEthersContract.js'
 
 class CreateCallContract_V1_3_0_Ethers extends CreateCallEthersContract {
   constructor(public contract: CreateCall) {
