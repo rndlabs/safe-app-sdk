@@ -16,7 +16,7 @@ import {
 } from '@rndlabs/safe-core-sdk-types'
 import semverSatisfies from 'semver/functions/satisfies.js'
 import { hexToNumber, hexToNumberString, toChecksumAddress } from 'web3-utils'
-import { estimateGas, estimateTxGas } from './gas'
+import { estimateGas, estimateTxGas } from './gas.js'
 
 export function standardizeMetaTransactionData(
   tx: SafeTransactionDataPartial
