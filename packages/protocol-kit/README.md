@@ -1,3 +1,5 @@
+# DO NOT USE
+
 # Protocol Kit
 
 [![NPM Version](https://badge.fury.io/js/%40safe-global%2Fprotocol-kit.svg)](https://badge.fury.io/js/%40safe-global%2Fprotocol-kit)
