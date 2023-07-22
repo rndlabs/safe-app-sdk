@@ -11,14 +11,14 @@ import {
   SafeTransactionEIP712Args
 } from '@rndlabs/safe-core-sdk-types'
 import { ethers } from 'ethers'
-import CompatibilityFallbackHandlerContractEthers from './contracts/CompatibilityFallbackHandler/CompatibilityFallbackHandlerEthersContract'
-import CreateCallEthersContract from './contracts/CreateCall/CreateCallEthersContract'
-import MultiSendEthersContract from './contracts/MultiSend/MultiSendEthersContract'
-import MultiSendCallOnlyEthersContract from './contracts/MultiSendCallOnly/MultiSendCallOnlyEthersContract'
-import SafeContractEthers from './contracts/Safe/SafeContractEthers'
-import SafeProxyFactoryEthersContract from './contracts/SafeProxyFactory/SafeProxyFactoryEthersContract'
-import SignMessageLibEthersContract from './contracts/SignMessageLib/SignMessageLibEthersContract'
-import SimulateTxAccessorEthersContract from './contracts/SimulateTxAccessor/SimulateTxAccessorEthersContract'
+import CompatibilityFallbackHandlerContractEthers from './contracts/CompatibilityFallbackHandler/CompatibilityFallbackHandlerEthersContract.js'
+import CreateCallEthersContract from './contracts/CreateCall/CreateCallEthersContract.js'
+import MultiSendEthersContract from './contracts/MultiSend/MultiSendEthersContract.js'
+import MultiSendCallOnlyEthersContract from './contracts/MultiSendCallOnly/MultiSendCallOnlyEthersContract.js'
+import SafeContractEthers from './contracts/Safe/SafeContractEthers.js'
+import SafeProxyFactoryEthersContract from './contracts/SafeProxyFactory/SafeProxyFactoryEthersContract.js'
+import SignMessageLibEthersContract from './contracts/SignMessageLib/SignMessageLibEthersContract.js'
+import SimulateTxAccessorEthersContract from './contracts/SimulateTxAccessor/SimulateTxAccessorEthersContract.js'
 import {
   getCompatibilityFallbackHandlerContractInstance,
   getCreateCallContractInstance,
@@ -28,8 +28,8 @@ import {
   getSafeProxyFactoryContractInstance,
   getSignMessageLibContractInstance,
   getSimulateTxAccessorContractInstance
-} from './contracts/contractInstancesEthers'
-import { isSignerCompatible, isTypedDataSigner } from './utils'
+} from './contracts/contractInstancesEthers.js'
+import { isSignerCompatible, isTypedDataSigner } from './utils/index.js'
 
 type Ethers = typeof ethers
 
