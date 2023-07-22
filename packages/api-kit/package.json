@@ -1,6 +1,6 @@
 {
   "name": "@rndlabs/safe-api-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Safe API Kit",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -55,7 +55,7 @@
   "dependencies": {
     "@ethersproject/abstract-signer": "^5.7.0",
     "@rndlabs/safe-core-sdk-types": "^0.1.4",
-    "@rndlabs/safe-protocol-kit": "^1.0.3",
+    "@rndlabs/safe-protocol-kit": "^1.0.4",
     "@types/node-fetch": "^2.6.4",
     "node-fetch": "^2.6.6"
   },
