@@ -243,7 +243,13 @@ class Safe {
    */
   async getContractVersion(): Promise<SafeVersion> {
     if (this.#contractManager.safeContract) {
-      return this.#contractManager.safeContract.getVersion()
+      try {
+        return this.#contractManager.safeContract.getVersion()
+      } catch (error) {
+        // Called `VERSION()` on a Safe contract that does not have the function
+        // revert to default version
+        return DEFAULT_SAFE_VERSION
+      }
     }
 
     if (this.#predictedSafe?.safeDeploymentConfig?.safeVersion) {
