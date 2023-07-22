@@ -1,4 +1,4 @@
-import Safe from './Safe.js'
+import { Safe } from './safe.js'
 import {
   CreateCallEthersContract,
   CreateProxyProps as CreateEthersProxyProps,
@@ -52,6 +52,7 @@ import { SafeTransactionOptionalProps } from './utils/transactions/types.js'
 import { encodeMultiSendData, standardizeSafeTransactionData } from './utils/transactions/utils.js'
 
 export {
+  Safe,
   AddOwnerTxParams,
   ConnectSafeConfig,
   ConnectSafeConfigWithPredictedSafe,
@@ -99,5 +100,3 @@ export {
   predictSafeAddress,
   standardizeSafeTransactionData
 }
-
-export default Safe

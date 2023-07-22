@@ -1009,4 +1009,4 @@ class Safe {
   }
 }
 
-export default Safe
+export { Safe }

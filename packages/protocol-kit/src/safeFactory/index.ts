@@ -1,4 +1,4 @@
-import Safe from '../Safe.js'
+import { Safe } from '../safe.js'
 import { DEFAULT_SAFE_VERSION } from '../contracts/config.js'
 import { getProxyFactoryContract, getSafeContract } from '../contracts/safeDeploymentContracts.js'
 import {
