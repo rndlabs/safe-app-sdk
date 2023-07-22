@@ -1,6 +1,6 @@
 import { Eip3770Address } from '@rndlabs/safe-core-sdk-types'
-import { isAddress, isHexStrict } from 'web3-utils'
 import { networks } from './config.js'
+import { utils } from 'ethers'
 
 export function parseEip3770Address(fullAddress: string): Eip3770Address {
   const parts = fullAddress.split(':')
@@ -29,8 +29,7 @@ export function validateEip3770NetworkPrefix(prefix: string, currentChainId: num
 }
 
 export function validateEthereumAddress(address: string): void {
-  const isValidAddress = isHexStrict(address) && isAddress(address)
-  if (!isValidAddress) {
+  if (!utils.isAddress(address)) {
     throw new Error(`Invalid Ethereum address ${address}`)
   }
 }

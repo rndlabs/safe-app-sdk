@@ -57,8 +57,7 @@
     "ethers": "5.7.2",
     "ethereumjs-util": "^7.1.5",
     "semver": "^7.5.4",
-    "typescript": "^5.1.6",
-    "web3-utils": "^1.8.1"
+    "typescript": "^5.1.6"
   },
   "publishConfig": {
     "access": "public"

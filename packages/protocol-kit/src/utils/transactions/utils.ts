@@ -15,8 +15,8 @@ import {
   SafeVersion
 } from '@rndlabs/safe-core-sdk-types'
 import semverSatisfies from 'semver/functions/satisfies.js'
-import { hexToNumber, hexToNumberString, toChecksumAddress } from 'web3-utils'
 import { estimateGas, estimateTxGas } from './gas.js'
+import { BigNumber, utils } from 'ethers'
 
 export function standardizeMetaTransactionData(
   tx: SafeTransactionDataPartial
@@ -142,9 +142,9 @@ export function decodeMultiSendData(encodedData: string): MetaTransactionData[] 
     const data = `0x${decodedData.slice(index, (index += dataLength))}`
 
     txs.push({
-      operation: hexToNumber(operation) as OperationType,
-      to: toChecksumAddress(to),
-      value: hexToNumberString(value),
+      operation: BigNumber.from(operation).toNumber() as OperationType,
+      to: utils.getAddress(to),
+      value: BigNumber.from(value).toString(),
       data
     })
   }
